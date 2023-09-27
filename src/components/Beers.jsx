@@ -22,7 +22,7 @@ useEffect(() => {
 
 
 
-    return ( 
+    return beers ? ( 
         <>
             <NavBar/>       
             <h3>Beer component</h3>
@@ -38,7 +38,7 @@ useEffect(() => {
                 </Fragment>
             ))}
         </>
-     );
+     ) : (<h2>Loading beers..</h2>)
 }
  
 export default Beers;
